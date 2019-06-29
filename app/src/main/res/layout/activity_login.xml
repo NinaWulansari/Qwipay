@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/custom_toolbar"/>
+
+    <com.example.baka57r.ezpy.utils.TextView_Lato
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:paddingTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        android:text="Hai, Selamat Datang"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="20dp"/>
+
+    <com.example.baka57r.ezpy.utils.TextView_Lato
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey_600"
+        android:text="Senang berjumpa kembali"
+        android:layout_marginBottom="45dp"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-mail"
+        android:textSize="14sp"
+        android:textColor="@color/grey_600"/>
+
+    <EditText
+        android:id="@+id/email_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey_600"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/grey_600"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:singleLine="true"
+        android:nextFocusDown="@+id/password"/>
+
+    <TextView
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="14sp"
+        android:textColor="@color/grey_600"/>
+
+    <EditText
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey_600"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/grey_600"
+        android:singleLine="true"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="170dp"
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:background="@drawable/selector_button"
+        android:text="MASUK"
+        android:textColor="@color/white_"/>
+</LinearLayout>

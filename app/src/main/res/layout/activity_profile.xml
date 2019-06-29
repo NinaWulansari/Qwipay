@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logogram"
+        android:layout_gravity="center"/>
+
+    <com.example.baka57r.ezpy.utils.TextView_Lato
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QID"
+        android:layout_gravity="center"
+        android:textColor="@color/grey_600"
+        android:layout_marginBottom="5dp"/>
+
+    <com.example.baka57r.ezpy.utils.TextView_Lato
+        android:id="@+id/qid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="08175727747"
+        android:layout_gravity="center"
+        android:textColor="@color/grey_600"/>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:srcCompat="@drawable/ic_person"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.example.baka57r.ezpy.utils.TextView_Lato
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Lengkap"
+                android:textColor="@color/grey_600"
+                android:textSize="16dp"/>
+
+            <EditText
+                android:fontFamily="@font/helvetica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nama_user"
+                android:text="Nina Wulansari"
+                android:textColor="@color/grey_600"
+                android:textSize="15dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:srcCompat="@drawable/ic_phone"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.example.baka57r.ezpy.utils.TextView_Lato
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No. Telepon"
+                android:textColor="@color/grey_600"
+                android:textSize="16dp"/>
+
+            <EditText
+                android:fontFamily="@font/helvetica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/phone_user"
+                android:text="(+62) 81234436722"
+                android:textColor="@color/grey_600"
+                android:textSize="15dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:srcCompat="@drawable/ic_emaill"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.example.baka57r.ezpy.utils.TextView_Lato
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-mail"
+                android:textColor="@color/grey_600"
+                android:textSize="16dp"/>
+
+            <EditText
+                android:fontFamily="@font/helvetica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/email_user"
+                android:text="wulan2910@gmail.com"
+                android:textColor="@color/grey_600"
+                android:textSize="15dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.example.baka57r.ezpy.utils.TextView_Lato
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Qwipay Version 1.1"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="30dp"/>
+
+    <View android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="@color/blue" />
+
+    <com.example.baka57r.ezpy.utils.TextView_Lato
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_gravity="center"
+        android:textColor="@color/blue"
+        android:textSize="18dp"
+        android:layout_margin="8dp"/>
+
+    <View android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="@color/blue" />
+
+</LinearLayout>

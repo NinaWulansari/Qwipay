@@ -1,0 +1,57 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.kotlin_version = '1.2.51'
+
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath 'com.google.gms:google-services:3.2.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+        maven { url "https://maven.google.com" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    supportlib_version = '27.1.1'
+    appcompat_version = supportlib_version
+    design_version = supportlib_version
+    constraintlayout_version = '1.1.0'
+    junit_version = '4.12'
+    testrunner_version = '1.0.2'
+    espresso_version = '3.0.2'
+}
+
+ext.deps = [
+        'kotlin' : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version",
+        'android': [
+                'support': [
+                        'core'            : "com.android.support:support-v4:$supportlib_version",
+                        'appcompat'       : "com.android.support:appcompat-v7:$appcompat_version",
+                        'constraintlayout': "com.android.support.constraint:constraint-layout:$constraintlayout_version",
+                        'design'          : "com.android.support:design:$design_version"
+                ]
+        ],
+        'test'   : [
+                'junit'   : "junit:junit:$junit_version",
+                'runner'  : "com.android.support.test:runner:$testrunner_version",
+                'espresso': "com.android.support.test.espresso:espresso-core:$espresso_version"
+        ]
+]
+

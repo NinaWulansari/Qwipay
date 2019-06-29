@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_google_signin_btn_text_dark_focused"
+    tools:context="com.example.baka57r.ezpy.DaftarPortal">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="254dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ezpayhitamkotak" />
+
+    <EditText
+        android:id="@+id/daftarnama"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="Nama"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textColorHint="@android:color/holo_blue_dark"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+    android:id="@+id/daftaremail"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="32dp"
+    android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+    android:textColor="@android:color/holo_blue_light"
+    android:textColorHint="@android:color/holo_blue_light"
+    android:textSize="36sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@id/imageView6"
+    app:layout_constraintTop_toBottomOf="@+id/daftarnama" />
+
+    <EditText
+        android:id="@+id/daftarpassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@android:color/holo_blue_light"
+        android:textColorHint="@android:color/holo_blue_light"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/daftaremail" />
+
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="60dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintEnd_toStartOf="@id/editText3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/ic_nama" />
+
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="60dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintEnd_toStartOf="@id/editText2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView5"
+        app:srcCompat="@drawable/ic_email" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="60dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintEnd_toStartOf="@id/editText2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView6"
+        app:srcCompat="@drawable/ic_gembok" />
+
+    <RadioGroup
+        android:id="@+id/radiogrup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/pilihpembeli"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/daftarpassword">
+
+        <RadioButton
+            android:id="@+id/pilihpenjual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Penjual"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toStartOf="@id/pilihpembeli"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/daftarpassword" />
+
+        <RadioButton
+            android:id="@+id/pilihpembeli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pembeli"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/pilihpenjual"
+            app:layout_constraintTop_toBottomOf="@id/daftarpassword" />
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/selesai"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="5dp"
+        android:onClick="klikdaftar"
+        android:orientation="horizontal"
+        android:text="Selesai"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radiogrup" />
+
+</android.support.constraint.ConstraintLayout>

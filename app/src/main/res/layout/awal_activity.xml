@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blue">
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:background="@drawable/logogram_and_type_qwipay"
+        android:layout_gravity="center"/>
+
+    <ImageView
+        android:id="@+id/background"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:background="@drawable/belakangsize2"
+        />
+
+    <com.example.baka57r.ezpy.utils.TextView_Lato
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Transaksi Dengan Mudah"
+        android:textColor="@color/white_"
+        android:textSize="19sp"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"/>
+
+    <com.example.baka57r.ezpy.utils.TextView_Lato
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:text="Kini kamu bisa melakukan transaksi dengan mudah dengan menggunakan scan Qrcode tanpa menghafalkan no token"
+        android:textColor="@color/white_"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:layout_marginTop="40dp"
+        android:id="@+id/signup"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@drawable/button"
+        android:text="DAFTAR"
+        android:onClick="onDaftar"
+        android:fontFamily="@font/helvetica"
+        android:textStyle="bold"
+        android:textColor="@color/white_"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <com.example.baka57r.ezpy.utils.TextView_Lato
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saya sudah punya "
+            android:textColor="@color/white_"
+            android:textSize="18sp"/>
+
+        <com.example.baka57r.ezpy.utils.TextView_Lato
+            android:id="@+id/signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Akun"
+            android:onClick="onGet"
+            android:textColor="@color/input_register_bg"
+            android:textSize="18sp"/>
+    </LinearLayout>
+</LinearLayout>

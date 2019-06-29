@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Qwipay</string>
+    <string name="title_activity_daftar_layout">DaftarLayout</string>
+    <string name="inout">In &amp; out transaction</string>
+</resources>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/blue">
+
+    <include
+        layout="@layout/custom_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_signup"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue"
+                android:textSize="18sp"
+                android:text="Mari mulai membuat akun"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama"
+                android:textSize="14sp"
+                android:textColor="@color/grey_600"/>
+
+            <EditText
+                android:id="@+id/nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey_600"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="@color/grey_600"
+                android:backgroundTint="@color/grey_600"
+                android:singleLine="true"
+                android:nextFocusDown="@+id/email"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-mail"
+                android:textSize="14sp"
+                android:textColor="@color/grey_600"/>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey_600"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="@color/grey_600"
+                android:backgroundTint="@color/grey_600"
+                android:singleLine="true"
+                android:nextFocusDown="@+id/phone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No. Handphone"
+                android:textSize="14sp"
+                android:textColor="@color/grey_600"/>
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey_600"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="@color/grey_600"
+                android:backgroundTint="@color/grey_600"
+                android:singleLine="true"
+                android:nextFocusDown="@+id/password"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textSize="14sp"
+                android:textColor="@color/grey_600" />
+
+            <EditText
+                android:inputType="textPassword"
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey_600"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="@color/grey_600"
+                android:backgroundTint="@color/grey_600"
+                android:maxLines="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daftar Sebagai"
+                android:textSize="14sp"
+                android:textColor="@color/grey_600"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"/>
+
+            <RadioGroup
+                android:id="@+id/radiogrup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkedButton="@+id/pilihpembeli"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/daftarpassword">
+
+                <RadioButton
+                    android:id="@+id/pilihpenjual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Penjual"
+                    android:textColor="@color/grey_600"
+                    android:textSize="14sp"
+                    android:layout_marginRight="15dp"
+                    android:buttonTint="@color/grey_600"
+                    app:layout_constraintEnd_toStartOf="@id/pilihpembeli"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/daftarpassword" />
+
+                <RadioButton
+                    android:id="@+id/pilihpembeli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pembeli"
+                    android:textColor="@color/grey_600"
+                    android:buttonTint="@color/grey_600"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/pilihpenjual"
+                    app:layout_constraintTop_toBottomOf="@id/daftarpassword"/>
+            </RadioGroup>
+
+            <TextView
+                android:onClick="klikdaftar"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/green_"
+                android:text="DAFTAR"
+                android:layout_gravity="right"
+                android:layout_marginTop="45dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View android:layout_width="fill_parent"
+        android:layout_height="1.5dip"
+        android:background="@color/grey_500"
+        android:layout_marginTop="-80dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+</ScrollView>
+</LinearLayout>

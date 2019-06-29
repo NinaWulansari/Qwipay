@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#010b38"
+    tools:context="com.example.baka57r.ezpy.DashboardPenjual">
+
+    <!--android:adjustViewBounds="true"-->
+
+    <TextView
+        android:id="@+id/textdua"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_weight="1"
+        android:background="@android:color/holo_blue_dark"
+        android:contentDescription="HMM"
+        android:text="Welcome "
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@id/textViews"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayouts2" />
+
+    <ImageButton
+        android:id="@+id/buttontiga"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:background="@color/colorPrimary"
+        android:text="TEST"
+        android:textAlignment="textEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayouts2"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_top_up" />
+
+    <LinearLayout
+        android:id="@+id/linearLayouts2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@android:color/holo_blue_bright"
+        android:padding="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <com.synnapps.carouselview.CarouselView
+            android:id="@+id/carouselView2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:fillColor="#FFFFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:pageColor="#00000000"
+            app:radius="0dp"
+            app:slideInterval="3000"
+            app:strokeColor="#FF777777"
+            app:strokeWidth="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+
+        <!-- <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v4.view.ViewPager> -->
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutdua"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayoutempat"
+
+        app:layout_constraintEnd_toStartOf="@+id/relativeLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textdua">
+
+        <ImageButton
+            android:id="@+id/imagebuttonsatu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:onClick="pindah_ke_input_jual"
+            android:background="?attr/colorControlActivated"
+            app:srcCompat="@drawable/ic_payment" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayouttiga"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/relativeLayoutdua"
+        app:layout_constraintTop_toBottomOf="@+id/textViews">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#19e999"
+            android:onClick="pindah_ke_logjual"
+            app:srcCompat="@drawable/ic_file" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutempat"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:padding="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttontiga"
+
+        app:layout_constraintEnd_toStartOf="@+id/relativeLayouttiga"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayoutdua">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#af49f4"
+            app:srcCompat="@drawable/ic_settings" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayouttiga"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttontiga"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/relativeLayoutempat"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00fac8"
+            android:onClick="coba_pindah_logoutjual"
+            app:srcCompat="@drawable/ic_logout" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textViews"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="Saldo"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textdua"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayouts2" />
+
+
+</android.support.constraint.ConstraintLayout>

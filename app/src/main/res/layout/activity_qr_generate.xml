@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.baka57r.ezpy.QrGenerate">
+
+    <RelativeLayout
+        android:id="@+id/relat1"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        app:layout_constraintBottom_toTopOf="@+id/relat2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/qrnya"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relat2"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/relat1">
+
+        <Button
+            android:id="@+id/selesaii"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/kimochi"
+            android:onClick="kembalikedash"
+            android:text="Selesai"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

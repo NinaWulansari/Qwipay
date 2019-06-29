@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"/>
+
+    <com.example.baka57r.ezpy.utils.TextView_Lato
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apa yang bisa kami bantu"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <GridView
+        android:id="@+id/gridviewHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnWidth="110dp"
+        android:gravity="center"
+        android:numColumns="4"
+        android:layout_marginBottom="20dp">
+    </GridView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <com.example.baka57r.ezpy.utils.TextView_Lato
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/inout"
+            android:textSize="18sp"/>
+
+        <com.example.baka57r.ezpy.utils.TextView_Lato
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lihat semua"
+            android:textColor="@color/blue"
+            android:textSize="18sp"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listview_transaction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

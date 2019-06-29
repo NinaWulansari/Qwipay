@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.baka57r.ezpy">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_qwipay"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_qwipay"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.Design.NoActionBar">
+        </activity>
+        <activity
+            android:name=".DashboardUser"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity
+            android:name=".DaftarLayout"
+            android:label="@string/title_activity_daftar_layout"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".LogPembeli" />
+
+        <activity
+            android:name=".DashboardPenjual"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity android:name=".ScanPembeli" />
+
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode" />
+
+        <activity android:name=".LogPenjual" />
+        <activity android:name=".InputTransaksiPenjual" />
+        <activity
+            android:name=".DaftarPortal"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity android:name=".QrGenerate" />
+
+        <activity android:name=".InputTopup"/>
+        <activity android:name=".Profil"/>
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".HalamanAwalActivity"/>
+        <activity android:name=".FAQActivity"/>
+        <activity android:name=".HomeUserActivity"/>
+    </application>
+
+</manifest>

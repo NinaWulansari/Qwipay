@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_ic"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/cancel_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_close"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    tools:ignore="ContentDescription"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:clickable="true"
+                    android:onClick="klik_faq"
+                    android:minWidth="0dp"
+                    android:visibility="gone"/>
+
+                <com.example.baka57r.ezpy.utils.TextView_Lato
+                    android:id="@+id/titleSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    style="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title" />
+
+                <com.balysv.materialripple.MaterialRippleLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/search_layout"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_alignParentRight="true">
+                    <ImageButton
+                        android:id="@+id/faq_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/ic_faq"
+                        style="@style/Base.Widget.AppCompat.Button.Borderless"
+                        tools:ignore="ContentDescription"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"
+                        android:clickable="true"
+                        android:onClick="klik_faq"
+                        android:minWidth="0dp"/>
+                </com.balysv.materialripple.MaterialRippleLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+</LinearLayout>
